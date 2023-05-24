@@ -71,9 +71,15 @@ background-size: 75%
 ???
 Throughout the meeting we have seen great work focused on risk factors related to dementia and the health disparities related to aging.
 
-NIA encourages the need to deliniate causal pathways and to broden the scope for malleable targets for intervention.
+As the NIA outlines here, the aim is to understand the etiologic pathways and ultimately identify effective targets for intervention.
 
-Helpful for elucidating mechanisms contributing to racial health disparities, identifying effective intervention targets (4-6, 29), and in turn addressing rather than solely further documenting racial health disparities
+THus, we are very frequently interested in answering causal questions, however there has been a long resistance to connect causal methods to structural factors is because the best study design is a randomized trial.
+
+So while we are mostly focusing on RCTs to answer questions for biological mechanisms, we still need the best of these methods to study structural factors. 
+
+Even so, RCTs are extremely hard in dementia research because we usually need decades of follow-up, so we mostly rely in observational studies. 
+
+I hope my work here helps moving out from that dilemma,  the core concepts of this framework to improve the way ask questions and seek responses with observational studies.
 
 ---
 
@@ -83,17 +89,19 @@ Experiment in which participants are randomly assigned to follow specified treat
 
 --
 
-**Ideal randomized trial**:
+.pull-left[
+**Ideal randomized trial**
 
    + No loss to follow-up
 
    + Full adherence through out the study duration
 
    + Double blind assignment
+]
 
---
+.pull-right[
 
-Usually they following time points are aligned by design:
+Time points aligned by design:
 
 - Eligibility criteria
 
@@ -101,9 +109,13 @@ Usually they following time points are aligned by design:
 
 - Follow-up starts
 
+]
+
 ???
-Counterfactual or potential outcomes, Causal diagrams (e.g., DAGs, SWIGs)
-The concept of an “ideal randomized trial” is tied directly to these languages
+So, I would first like to highlight a few characteristics of randomized trials that make them ideal to answer causal questions
+
+The concept of an “ideal randomized trial” is tied directly to the language of counterfactual or potential outcomes and causal diagrams
+
 
 ---
 .center[
@@ -120,8 +132,9 @@ The concept of an “ideal randomized trial” is tied directly to these languag
 Under this design, comparing the observed average outcomes under each treatment arm is the same as comparing what would have happened had everybody been in one treatment arm versus the other
 
 ---
-## Target trial emulation framework
 class: center, middle
+
+## Target trial emulation framework
 
 ![](figs/tt.png)
 ???
@@ -131,15 +144,6 @@ Describe the protocol elements of that target trial
 
 Emulate the target trial with observational data as close as possible
 
----
-
-class: middle, center
-
-![](https://media.giphy.com/media/pgcz9Arntj2Zq/giphy.gif)
-
-???
-Now, you may feel skeptical about this framework if you are not working specifically in pharmacoepi. Most of the modifiable risk factors are not easy to conceptualize as treatment arms in a trial. 
-I hope my work here helps moving out from that dilemma and using the core concepts of this framework to improve the way ask questions and seek responses with observational studies. 
 
 ---
 class: middle, left, even smaller
@@ -152,16 +156,19 @@ background-size: 15%
 .left[ _Work led by Taylor Mobley (UCLA, Mayeda's research lab)_ ]
 
 ???
-To illustrate what we might gain from using the TTF I will use as example a work in progress led by TM. This is an initial step and we plan to expand these ideas to other questions of structural racism in this grant.
+To illustrate how to implement the TTF I will use as example a work in progress led by TM. This is an initial step and we plan to expand these ideas to other questions of structural racism in this grant.
 
 ---
 ## Research question
 
 <br><br><br>
 .center[
-_What is the effect of early-life racial residencial segregation in 1940, measured by the dissimilarity index, on later-life memory decline in US population?_
+_What is the effect of early-life racial residencial segregation in 1940, measured by the dissimilarity index, on later-life memory decline in US population, represented by the Health and Retirement Study (HRS)?_
 ]
 
+???
+THe HRS is a national representative data with oversampling of black, latino population. 
+Recruitment started in the 90's and collects all kind of measurements, including memory scores every 2 years.
 ---
 
 ```{r}
@@ -200,7 +207,11 @@ target_statins %>% filter(n %in% c(1)) %>% select(-n) %>% gt() %>%
 ```
 
 ???
-Let's imagine 
+Before answering this question, lets take some time to outline the target trial and how we would emulate it... so hold on to your seats because we are going to be creative
+
+First, lets imagine we can take a time machine that transport us to 1940.
+
+
 ---
 class: even_smaller
 
@@ -265,16 +276,24 @@ class: even_smaller
 
 .footnote[
 
-*A0*: Early life metropolitan-area segregation <br>
-*ED-level L0:* population, % > 8th grade, % owned a home (overall and/or race-specific measures) <br> 
+*A0*: Racial residencial segregation in 1940's <br>
+*County-level L0:* population, % > 8th grade, % owned a home (overall and/or race-specific measures) <br> 
 *Individual-level L0:* Age at baseline cognitive assessment, sex, childhood SES index <br>
 *Y1, Y2, Yk*: Measurements of memory decline <br>
 *C2, Ck*: Censoring due to loss to follow-up or death]
 
+???
+THis is a directed acyclic graph, although it has been simplified and arrows are colored for better readability, that represent some of the data generating mechanisms.
+First, we have our exposure measured in 1940's, that is our time zero
+Next, we have memory measurements, represented as Y over time
+L0 represents the shared causes of the exposure and the outcome, this includes structural factors that are measured at a county level, and individual factors
+C represent loss to follow-up and death after initiating the follow-up
+
+
 ---
 ## Estimand
 
-$$E[Y_{1998}^{a = 1, c = 0}] - E[Y_{1998}^{a = 0, c = 0}]$$
+$$E[Y_{1998}^{a = 1}] - E[Y_{1998}^{a = 0}]$$
 --
 
 <br>
@@ -283,108 +302,89 @@ $$E[Y_{2000}^{a = 1, c = 0}] - [Y_{2000}^{a = 0, c = 0}]$$
 .center[....]
 <br>
 
+???
+With that in mind, we can outline our estimand or paratemer of interest.
+Since we are interested in a continuous outcome over time, we first discretized our estimand, by each time point.
+So first, we would be interested in evaluating the mean memory score at baseline had everyone had followed intervention 1) compared to the mean score at baseline had everyone had followed intervention 0)
+
+Next we would look at the mean difference on the memory score, under the two treatment strategies, and on and on we would do this until the last wave of data, and we could plot these point estimates over time, either as by treatment arm or the difference between them.
+
+
 --
 
 $$E[Y_{2018}^{a = 1, c = 0}] - E[Y_{2018}^{a = 0, c = 0}]$$
 ---
 ## Identifiability assumptions
 
-- Consistency: well-defined intervention
+- Consistency
 
---
+- Exchangeability
 
-- Exchangeability: no unmeasured confounding
+- Positivity
 
---
+- No interference
 
-- Positivity:
-
---
-
-- No interference:
-
-
+???
 
 
 ---
 
-### Identifiability assumptions: Consistency
+## Consistency
 
-- This framework improves the narrative and conversation around these complex exposures.
-
---
-
-  _What does it mean to intervene in 1940 on segregation_
+- Refers to having a well defined intervention.
 
 --
 
-  _Is the dissimilarity index a representative measurement_
+ -  _What does it mean to intervene in 1940 on segregation_
 
 --
 
-  _What is a relevant intervention on the dissimilarity index, reducing under certain threshold or by certain value?_
+ -  _Is the dissimilarity index a representative measurement_
+
+--
+
+  - _What is a relevant intervention on the dissimilarity index, reducing under certain threshold or by certain value?_
 
 ---
-### Identifiability assumptions: Consistency
+## Consistency
+
+
+- In this context, this framework may help us expand the narrative and conversation around these complex exposures.
+
+--
 
 - In this setting, the interventions represent a weighted average of strategies, determined by the frequency of these in the studied population.
 
 --
 
-- The target trial framework helps us in being more transparent about our questions, assumptions and interpretations.
-
---
-
 - It requires deep interdisciplinary dialogue, and only with subject matter expertise can inform how well we feel about satisfying this assumption
 
-
-???
-The consistency assumption is also defined as the well-defined intervention. Although there is a long standing debate on what classifies as "well-defined" or "ill-defined".
-
 ---
-### Identifiability assumptions: Exchangeability
+## Exchangeability
 
-- Considering what variables to adjust for is more challenging.
-
---
-
-- Since there are many factors that can influence residential segregation, whatever we adjust for is not accounted into how we would intervene.
+- If we consider the dissimilarity index a proxy of all the racist policies that have consequences in residential segregation, whatever we adjust for is not accounted into how we would intervene.
 
 --
 
-- There is a moral and ethical value in terms of what variables to adjust. "Allowable" sources of difference are considered fair, and "non-allowable" sources are considered unfair.*
+- There is a moral and ethical value in terms of what variables to adjust.  "Non-allowable" sources are considered unfair and contribute to disparities.(_Jackson J. Epidemiology. 2021_)
 
 --
 
 - Doubly robust methods (TMLE)** can help us obtain valid inferences if either the exposure or the outcome mechanism is consistently estimated.
 
 .footnote[
-* Jackson J. Epidemiology. 2021.
 ** Targeted maximum likelihood estimation. Schuler M. & Rose S. AJE. 2016.
 ]
----
-## Other identifiability assumptions
-
-- Positivity
-
-- No interference
-
-- No model misspecification
 
 ---
 
 ## Take aways
 
+- The target trial framework helps us in being more transparent about our questions, assumptions and interpretations.
 
-- Having a clear question (or estimand) is key to conceptualize the best study design that answers it. 
-  
 --
 
 - We can use the target trial framework even if the intervention of interest is not measured (or exists!). 
-
---
-
-- Specifying the components of the target trial should be one of the first steps prior to the outline of an analysis plan that emulates such trial. 
 
 --
 
@@ -400,10 +400,13 @@ The consistency assumption is also defined as the well-defined intervention. Alt
 NIA R01AG074359: Historical social and environmental determinants of memory decline and dementia among U.S. older adults (Dr. Mayeda and Dr. Casey)
 
 ---
+class: middle, right
 
-class: center, middle
+#### _To search for all the refutable consequences of a hypothesis demands highly imaginative thinking. Imagination is needed to arrive at the hypothesis in the first place, let alone to suggest rigorous tests for it. (Carol Buck)_ 
 
-![](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif)
+.footnote[
+_Buck C. Popper's Philosophy for Epidemiologists, IJE. 1975_
+]
 ---
 class: center, middle
 
@@ -415,6 +418,12 @@ class: center, middle
 
 `r fa("github")` <a href="https://github.com/palolili23"> </i>&nbsp; @palolili23</a><br>
 
+---
+
+
+class: center, middle
+
+![](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif)
 
 ---
 
@@ -437,3 +446,5 @@ We use counties as the larger geographic area of interest (_t_) and enumeration 
 ???
 
 A group is evenly distributed when each geographic unit has the same percentage of group members as the total population. The index score can also be interpreted as the percentage of one of the two groups included in the calculation that would have to move to different geographic areas in order to produce a distribution that matches that of the larger area.
+
+

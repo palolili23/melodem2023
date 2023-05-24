@@ -43,9 +43,15 @@ background-size: 75%
 ???
 Throughout the meeting we have seen great work focused on risk factors related to dementia and the health disparities related to aging.
 
-NIA encourages the need to deliniate causal pathways and to broden the scope for malleable targets for intervention.
+As the NIA outlines here, the aim is to understand the etiologic pathways and ultimately identify effective targets for intervention.
 
-Helpful for elucidating mechanisms contributing to racial health disparities, identifying effective intervention targets (4-6, 29), and in turn addressing rather than solely further documenting racial health disparities
+THus, we are very frequently interested in answering causal questions, however there has been a long resistance to connect causal methods to structural factors is because the best study design is a randomized trial.
+
+So while we are mostly focusing on RCTs to answer questions for biological mechanisms, we still need the best of these methods to study structural factors. 
+
+Even so, RCTs are extremely hard in dementia research because we usually need decades of follow-up, so we mostly rely in observational studies. 
+
+I hope my work here helps moving out from that dilemma,  the core concepts of this framework to improve the way ask questions and seek responses with observational studies.
 
 ---
 
@@ -55,17 +61,19 @@ Experiment in which participants are randomly assigned to follow specified treat
 
 --
 
-**Ideal randomized trial**:
+.pull-left[
+**Ideal randomized trial**
 
    + No loss to follow-up
 
    + Full adherence through out the study duration
 
    + Double blind assignment
+]
 
---
+.pull-right[
 
-Usually they following time points are aligned by design:
+Time points aligned by design:
 
 - Eligibility criteria
 
@@ -73,9 +81,13 @@ Usually they following time points are aligned by design:
 
 - Follow-up starts
 
+]
+
 ???
-Counterfactual or potential outcomes, Causal diagrams (e.g., DAGs, SWIGs)
-The concept of an “ideal randomized trial” is tied directly to these languages
+So, I would first like to highlight a few characteristics of randomized trials that make them ideal to answer causal questions
+
+The concept of an “ideal randomized trial” is tied directly to the language of counterfactual or potential outcomes and causal diagrams
+
 
 ---
 .center[
@@ -86,14 +98,15 @@ The concept of an “ideal randomized trial” is tied directly to these languag
 
 ]
 
-.footnote[**Hernán MA, Robins JM (2020). Causal Inference: What If**]
+.footnote[_Hernán MA, Robins JM (2020). Causal Inference: What If_]
 
 ???
 Under this design, comparing the observed average outcomes under each treatment arm is the same as comparing what would have happened had everybody been in one treatment arm versus the other
 
 ---
-## Target trial emulation framework
 class: center, middle
+
+## Target trial emulation framework
 
 ![](figs/tt.png)
 ???
@@ -103,15 +116,6 @@ Describe the protocol elements of that target trial
 
 Emulate the target trial with observational data as close as possible
 
----
-
-class: middle, center
-
-![](https://media.giphy.com/media/pgcz9Arntj2Zq/giphy.gif)
-
-???
-Now, you may feel skeptical about this framework if you are not working specifically in pharmacoepi. Most of the modifiable risk factors are not easy to conceptualize as treatment arms in a trial. 
-I hope my work here helps moving out from that dilemma and using the core concepts of this framework to improve the way ask questions and seek responses with observational studies. 
 
 ---
 class: middle, left, even smaller
@@ -124,24 +128,27 @@ background-size: 15%
 .left[ _Work led by Taylor Mobley (UCLA, Mayeda's research lab)_ ]
 
 ???
-To illustrate what we might gain from using the TTF I will use as example a work in progress led by TM. This is an initial step and we plan to expand these ideas to other questions of structural racism in this grant.
+To illustrate how to implement the TTF I will use as example a work in progress led by TM. This is an initial step and we plan to expand these ideas to other questions of structural racism in this grant.
 
 ---
 ## Research question
 
 &lt;br&gt;&lt;br&gt;&lt;br&gt;
 .center[
-_What is the effect of early-life racial residencial segregation in 1940, measured by the dissimilarity index, on later-life memory decline in US population?_
+_What is the effect of early-life racial residencial segregation in 1940, measured by the dissimilarity index, on later-life memory decline in US population, represented by the Health and Retirement Study (HRS)?_
 ]
 
+???
+THe HRS is a national representative data with oversampling of black, latino population. 
+Recruitment started in the 90's and collects all kind of measurements, including memory scores every 2 years.
 ---
 
-<div id="hgmukkqgur" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="esnbtezoae" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hgmukkqgur .gt_table {
+#esnbtezoae .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -166,7 +173,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-left-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_heading {
+#esnbtezoae .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -178,7 +185,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-right-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_title {
+#esnbtezoae .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -190,7 +197,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-bottom-width: 0;
 }
 
-#hgmukkqgur .gt_subtitle {
+#esnbtezoae .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -202,13 +209,13 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-top-width: 0;
 }
 
-#hgmukkqgur .gt_bottom_border {
+#esnbtezoae .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_col_headings {
+#esnbtezoae .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -223,7 +230,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-right-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_col_heading {
+#esnbtezoae .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -243,7 +250,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   overflow-x: hidden;
 }
 
-#hgmukkqgur .gt_column_spanner_outer {
+#esnbtezoae .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -255,15 +262,15 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   padding-right: 4px;
 }
 
-#hgmukkqgur .gt_column_spanner_outer:first-child {
+#esnbtezoae .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hgmukkqgur .gt_column_spanner_outer:last-child {
+#esnbtezoae .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hgmukkqgur .gt_column_spanner {
+#esnbtezoae .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -275,7 +282,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   width: 100%;
 }
 
-#hgmukkqgur .gt_group_heading {
+#esnbtezoae .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -300,7 +307,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   vertical-align: middle;
 }
 
-#hgmukkqgur .gt_empty_group_heading {
+#esnbtezoae .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -315,15 +322,15 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   vertical-align: middle;
 }
 
-#hgmukkqgur .gt_from_md > :first-child {
+#esnbtezoae .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hgmukkqgur .gt_from_md > :last-child {
+#esnbtezoae .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hgmukkqgur .gt_row {
+#esnbtezoae .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -342,7 +349,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   overflow-x: hidden;
 }
 
-#hgmukkqgur .gt_stub {
+#esnbtezoae .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -355,7 +362,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   padding-right: 5px;
 }
 
-#hgmukkqgur .gt_stub_row_group {
+#esnbtezoae .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,11 +376,11 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   vertical-align: top;
 }
 
-#hgmukkqgur .gt_row_group_first td {
+#esnbtezoae .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hgmukkqgur .gt_summary_row {
+#esnbtezoae .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -383,16 +390,16 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   padding-right: 5px;
 }
 
-#hgmukkqgur .gt_first_summary_row {
+#esnbtezoae .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_first_summary_row.thick {
+#esnbtezoae .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hgmukkqgur .gt_last_summary_row {
+#esnbtezoae .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -402,7 +409,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-bottom-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_grand_summary_row {
+#esnbtezoae .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -412,7 +419,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   padding-right: 5px;
 }
 
-#hgmukkqgur .gt_first_grand_summary_row {
+#esnbtezoae .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -422,11 +429,11 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-top-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_striped {
+#esnbtezoae .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hgmukkqgur .gt_table_body {
+#esnbtezoae .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -435,7 +442,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-bottom-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_footnotes {
+#esnbtezoae .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -449,7 +456,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-right-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_footnote {
+#esnbtezoae .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -458,7 +465,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   padding-right: 5px;
 }
 
-#hgmukkqgur .gt_sourcenotes {
+#esnbtezoae .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -472,7 +479,7 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   border-right-color: #D3D3D3;
 }
 
-#hgmukkqgur .gt_sourcenote {
+#esnbtezoae .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -480,64 +487,64 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
   padding-right: 5px;
 }
 
-#hgmukkqgur .gt_left {
+#esnbtezoae .gt_left {
   text-align: left;
 }
 
-#hgmukkqgur .gt_center {
+#esnbtezoae .gt_center {
   text-align: center;
 }
 
-#hgmukkqgur .gt_right {
+#esnbtezoae .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hgmukkqgur .gt_font_normal {
+#esnbtezoae .gt_font_normal {
   font-weight: normal;
 }
 
-#hgmukkqgur .gt_font_bold {
+#esnbtezoae .gt_font_bold {
   font-weight: bold;
 }
 
-#hgmukkqgur .gt_font_italic {
+#esnbtezoae .gt_font_italic {
   font-style: italic;
 }
 
-#hgmukkqgur .gt_super {
+#esnbtezoae .gt_super {
   font-size: 65%;
 }
 
-#hgmukkqgur .gt_footnote_marks {
+#esnbtezoae .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#hgmukkqgur .gt_asterisk {
+#esnbtezoae .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hgmukkqgur .gt_indent_1 {
+#esnbtezoae .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hgmukkqgur .gt_indent_2 {
+#esnbtezoae .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hgmukkqgur .gt_indent_3 {
+#esnbtezoae .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hgmukkqgur .gt_indent_4 {
+#esnbtezoae .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hgmukkqgur .gt_indent_5 {
+#esnbtezoae .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -566,16 +573,20 @@ _What is the effect of early-life racial residencial segregation in 1940, measur
 </div>
 
 ???
-Let's imagine 
+Before answering this question, lets take some time to outline the target trial and how we would emulate it... so hold on to your seats because we are going to be creative
+
+First, lets imagine we can take a time machine that transport us to 1940.
+
+
 ---
 class: even_smaller
 
-<div id="jaoqhuojnt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="uojnpsvzsl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#jaoqhuojnt .gt_table {
+#uojnpsvzsl .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -600,7 +611,7 @@ class: even_smaller
   border-left-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_heading {
+#uojnpsvzsl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -612,7 +623,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_title {
+#uojnpsvzsl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -624,7 +635,7 @@ class: even_smaller
   border-bottom-width: 0;
 }
 
-#jaoqhuojnt .gt_subtitle {
+#uojnpsvzsl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -636,13 +647,13 @@ class: even_smaller
   border-top-width: 0;
 }
 
-#jaoqhuojnt .gt_bottom_border {
+#uojnpsvzsl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_col_headings {
+#uojnpsvzsl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -657,7 +668,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_col_heading {
+#uojnpsvzsl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -677,7 +688,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#jaoqhuojnt .gt_column_spanner_outer {
+#uojnpsvzsl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -689,15 +700,15 @@ class: even_smaller
   padding-right: 4px;
 }
 
-#jaoqhuojnt .gt_column_spanner_outer:first-child {
+#uojnpsvzsl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jaoqhuojnt .gt_column_spanner_outer:last-child {
+#uojnpsvzsl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jaoqhuojnt .gt_column_spanner {
+#uojnpsvzsl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -709,7 +720,7 @@ class: even_smaller
   width: 100%;
 }
 
-#jaoqhuojnt .gt_group_heading {
+#uojnpsvzsl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -734,7 +745,7 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#jaoqhuojnt .gt_empty_group_heading {
+#uojnpsvzsl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -749,15 +760,15 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#jaoqhuojnt .gt_from_md > :first-child {
+#uojnpsvzsl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jaoqhuojnt .gt_from_md > :last-child {
+#uojnpsvzsl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jaoqhuojnt .gt_row {
+#uojnpsvzsl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -776,7 +787,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#jaoqhuojnt .gt_stub {
+#uojnpsvzsl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -789,7 +800,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#jaoqhuojnt .gt_stub_row_group {
+#uojnpsvzsl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -803,11 +814,11 @@ class: even_smaller
   vertical-align: top;
 }
 
-#jaoqhuojnt .gt_row_group_first td {
+#uojnpsvzsl .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jaoqhuojnt .gt_summary_row {
+#uojnpsvzsl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -817,16 +828,16 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#jaoqhuojnt .gt_first_summary_row {
+#uojnpsvzsl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_first_summary_row.thick {
+#uojnpsvzsl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jaoqhuojnt .gt_last_summary_row {
+#uojnpsvzsl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -836,7 +847,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_grand_summary_row {
+#uojnpsvzsl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -846,7 +857,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#jaoqhuojnt .gt_first_grand_summary_row {
+#uojnpsvzsl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -856,11 +867,11 @@ class: even_smaller
   border-top-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_striped {
+#uojnpsvzsl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jaoqhuojnt .gt_table_body {
+#uojnpsvzsl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -869,7 +880,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_footnotes {
+#uojnpsvzsl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -883,7 +894,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_footnote {
+#uojnpsvzsl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -892,7 +903,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#jaoqhuojnt .gt_sourcenotes {
+#uojnpsvzsl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -906,7 +917,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#jaoqhuojnt .gt_sourcenote {
+#uojnpsvzsl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -914,64 +925,64 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#jaoqhuojnt .gt_left {
+#uojnpsvzsl .gt_left {
   text-align: left;
 }
 
-#jaoqhuojnt .gt_center {
+#uojnpsvzsl .gt_center {
   text-align: center;
 }
 
-#jaoqhuojnt .gt_right {
+#uojnpsvzsl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jaoqhuojnt .gt_font_normal {
+#uojnpsvzsl .gt_font_normal {
   font-weight: normal;
 }
 
-#jaoqhuojnt .gt_font_bold {
+#uojnpsvzsl .gt_font_bold {
   font-weight: bold;
 }
 
-#jaoqhuojnt .gt_font_italic {
+#uojnpsvzsl .gt_font_italic {
   font-style: italic;
 }
 
-#jaoqhuojnt .gt_super {
+#uojnpsvzsl .gt_super {
   font-size: 65%;
 }
 
-#jaoqhuojnt .gt_footnote_marks {
+#uojnpsvzsl .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#jaoqhuojnt .gt_asterisk {
+#uojnpsvzsl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jaoqhuojnt .gt_indent_1 {
+#uojnpsvzsl .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jaoqhuojnt .gt_indent_2 {
+#uojnpsvzsl .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jaoqhuojnt .gt_indent_3 {
+#uojnpsvzsl .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jaoqhuojnt .gt_indent_4 {
+#uojnpsvzsl .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jaoqhuojnt .gt_indent_5 {
+#uojnpsvzsl .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1006,12 +1017,12 @@ class: even_smaller
 ---
 class: even_smaller
 
-<div id="cafkhnqmow" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="widmnnfclw" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#cafkhnqmow .gt_table {
+#widmnnfclw .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1036,7 +1047,7 @@ class: even_smaller
   border-left-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_heading {
+#widmnnfclw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1048,7 +1059,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_title {
+#widmnnfclw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1060,7 +1071,7 @@ class: even_smaller
   border-bottom-width: 0;
 }
 
-#cafkhnqmow .gt_subtitle {
+#widmnnfclw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1072,13 +1083,13 @@ class: even_smaller
   border-top-width: 0;
 }
 
-#cafkhnqmow .gt_bottom_border {
+#widmnnfclw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_col_headings {
+#widmnnfclw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1093,7 +1104,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_col_heading {
+#widmnnfclw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1113,7 +1124,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#cafkhnqmow .gt_column_spanner_outer {
+#widmnnfclw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1125,15 +1136,15 @@ class: even_smaller
   padding-right: 4px;
 }
 
-#cafkhnqmow .gt_column_spanner_outer:first-child {
+#widmnnfclw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cafkhnqmow .gt_column_spanner_outer:last-child {
+#widmnnfclw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cafkhnqmow .gt_column_spanner {
+#widmnnfclw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1145,7 +1156,7 @@ class: even_smaller
   width: 100%;
 }
 
-#cafkhnqmow .gt_group_heading {
+#widmnnfclw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1170,7 +1181,7 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#cafkhnqmow .gt_empty_group_heading {
+#widmnnfclw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1185,15 +1196,15 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#cafkhnqmow .gt_from_md > :first-child {
+#widmnnfclw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cafkhnqmow .gt_from_md > :last-child {
+#widmnnfclw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cafkhnqmow .gt_row {
+#widmnnfclw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1212,7 +1223,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#cafkhnqmow .gt_stub {
+#widmnnfclw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1225,7 +1236,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#cafkhnqmow .gt_stub_row_group {
+#widmnnfclw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1239,11 +1250,11 @@ class: even_smaller
   vertical-align: top;
 }
 
-#cafkhnqmow .gt_row_group_first td {
+#widmnnfclw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cafkhnqmow .gt_summary_row {
+#widmnnfclw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1253,16 +1264,16 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#cafkhnqmow .gt_first_summary_row {
+#widmnnfclw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_first_summary_row.thick {
+#widmnnfclw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cafkhnqmow .gt_last_summary_row {
+#widmnnfclw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1272,7 +1283,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_grand_summary_row {
+#widmnnfclw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1282,7 +1293,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#cafkhnqmow .gt_first_grand_summary_row {
+#widmnnfclw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1292,11 +1303,11 @@ class: even_smaller
   border-top-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_striped {
+#widmnnfclw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cafkhnqmow .gt_table_body {
+#widmnnfclw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1305,7 +1316,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_footnotes {
+#widmnnfclw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1319,7 +1330,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_footnote {
+#widmnnfclw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1328,7 +1339,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#cafkhnqmow .gt_sourcenotes {
+#widmnnfclw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1342,7 +1353,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#cafkhnqmow .gt_sourcenote {
+#widmnnfclw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1350,64 +1361,64 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#cafkhnqmow .gt_left {
+#widmnnfclw .gt_left {
   text-align: left;
 }
 
-#cafkhnqmow .gt_center {
+#widmnnfclw .gt_center {
   text-align: center;
 }
 
-#cafkhnqmow .gt_right {
+#widmnnfclw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cafkhnqmow .gt_font_normal {
+#widmnnfclw .gt_font_normal {
   font-weight: normal;
 }
 
-#cafkhnqmow .gt_font_bold {
+#widmnnfclw .gt_font_bold {
   font-weight: bold;
 }
 
-#cafkhnqmow .gt_font_italic {
+#widmnnfclw .gt_font_italic {
   font-style: italic;
 }
 
-#cafkhnqmow .gt_super {
+#widmnnfclw .gt_super {
   font-size: 65%;
 }
 
-#cafkhnqmow .gt_footnote_marks {
+#widmnnfclw .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#cafkhnqmow .gt_asterisk {
+#widmnnfclw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cafkhnqmow .gt_indent_1 {
+#widmnnfclw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cafkhnqmow .gt_indent_2 {
+#widmnnfclw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cafkhnqmow .gt_indent_3 {
+#widmnnfclw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cafkhnqmow .gt_indent_4 {
+#widmnnfclw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cafkhnqmow .gt_indent_5 {
+#widmnnfclw .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1445,12 +1456,12 @@ class: even_smaller
 ---
 class: even_smaller
 
-<div id="lqbntaiwgz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ggxkfrgzwe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#lqbntaiwgz .gt_table {
+#ggxkfrgzwe .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1475,7 +1486,7 @@ class: even_smaller
   border-left-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_heading {
+#ggxkfrgzwe .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1487,7 +1498,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_title {
+#ggxkfrgzwe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1499,7 +1510,7 @@ class: even_smaller
   border-bottom-width: 0;
 }
 
-#lqbntaiwgz .gt_subtitle {
+#ggxkfrgzwe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1511,13 +1522,13 @@ class: even_smaller
   border-top-width: 0;
 }
 
-#lqbntaiwgz .gt_bottom_border {
+#ggxkfrgzwe .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_col_headings {
+#ggxkfrgzwe .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1532,7 +1543,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_col_heading {
+#ggxkfrgzwe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1552,7 +1563,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#lqbntaiwgz .gt_column_spanner_outer {
+#ggxkfrgzwe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1564,15 +1575,15 @@ class: even_smaller
   padding-right: 4px;
 }
 
-#lqbntaiwgz .gt_column_spanner_outer:first-child {
+#ggxkfrgzwe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lqbntaiwgz .gt_column_spanner_outer:last-child {
+#ggxkfrgzwe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lqbntaiwgz .gt_column_spanner {
+#ggxkfrgzwe .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1584,7 +1595,7 @@ class: even_smaller
   width: 100%;
 }
 
-#lqbntaiwgz .gt_group_heading {
+#ggxkfrgzwe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1609,7 +1620,7 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#lqbntaiwgz .gt_empty_group_heading {
+#ggxkfrgzwe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1624,15 +1635,15 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#lqbntaiwgz .gt_from_md > :first-child {
+#ggxkfrgzwe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lqbntaiwgz .gt_from_md > :last-child {
+#ggxkfrgzwe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lqbntaiwgz .gt_row {
+#ggxkfrgzwe .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1651,7 +1662,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#lqbntaiwgz .gt_stub {
+#ggxkfrgzwe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1664,7 +1675,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lqbntaiwgz .gt_stub_row_group {
+#ggxkfrgzwe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1678,11 +1689,11 @@ class: even_smaller
   vertical-align: top;
 }
 
-#lqbntaiwgz .gt_row_group_first td {
+#ggxkfrgzwe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lqbntaiwgz .gt_summary_row {
+#ggxkfrgzwe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1692,16 +1703,16 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lqbntaiwgz .gt_first_summary_row {
+#ggxkfrgzwe .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_first_summary_row.thick {
+#ggxkfrgzwe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lqbntaiwgz .gt_last_summary_row {
+#ggxkfrgzwe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1711,7 +1722,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_grand_summary_row {
+#ggxkfrgzwe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1721,7 +1732,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lqbntaiwgz .gt_first_grand_summary_row {
+#ggxkfrgzwe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1731,11 +1742,11 @@ class: even_smaller
   border-top-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_striped {
+#ggxkfrgzwe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lqbntaiwgz .gt_table_body {
+#ggxkfrgzwe .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1744,7 +1755,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_footnotes {
+#ggxkfrgzwe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1758,7 +1769,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_footnote {
+#ggxkfrgzwe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1767,7 +1778,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lqbntaiwgz .gt_sourcenotes {
+#ggxkfrgzwe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1781,7 +1792,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lqbntaiwgz .gt_sourcenote {
+#ggxkfrgzwe .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1789,64 +1800,64 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lqbntaiwgz .gt_left {
+#ggxkfrgzwe .gt_left {
   text-align: left;
 }
 
-#lqbntaiwgz .gt_center {
+#ggxkfrgzwe .gt_center {
   text-align: center;
 }
 
-#lqbntaiwgz .gt_right {
+#ggxkfrgzwe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lqbntaiwgz .gt_font_normal {
+#ggxkfrgzwe .gt_font_normal {
   font-weight: normal;
 }
 
-#lqbntaiwgz .gt_font_bold {
+#ggxkfrgzwe .gt_font_bold {
   font-weight: bold;
 }
 
-#lqbntaiwgz .gt_font_italic {
+#ggxkfrgzwe .gt_font_italic {
   font-style: italic;
 }
 
-#lqbntaiwgz .gt_super {
+#ggxkfrgzwe .gt_super {
   font-size: 65%;
 }
 
-#lqbntaiwgz .gt_footnote_marks {
+#ggxkfrgzwe .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#lqbntaiwgz .gt_asterisk {
+#ggxkfrgzwe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lqbntaiwgz .gt_indent_1 {
+#ggxkfrgzwe .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lqbntaiwgz .gt_indent_2 {
+#ggxkfrgzwe .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lqbntaiwgz .gt_indent_3 {
+#ggxkfrgzwe .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lqbntaiwgz .gt_indent_4 {
+#ggxkfrgzwe .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lqbntaiwgz .gt_indent_5 {
+#ggxkfrgzwe .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1887,12 +1898,12 @@ class: even_smaller
 ---
 class: even_smaller
 
-<div id="bxwvagjaon" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="zrypvofgtn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#bxwvagjaon .gt_table {
+#zrypvofgtn .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1917,7 +1928,7 @@ class: even_smaller
   border-left-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_heading {
+#zrypvofgtn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1929,7 +1940,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_title {
+#zrypvofgtn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1941,7 +1952,7 @@ class: even_smaller
   border-bottom-width: 0;
 }
 
-#bxwvagjaon .gt_subtitle {
+#zrypvofgtn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1953,13 +1964,13 @@ class: even_smaller
   border-top-width: 0;
 }
 
-#bxwvagjaon .gt_bottom_border {
+#zrypvofgtn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_col_headings {
+#zrypvofgtn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1974,7 +1985,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_col_heading {
+#zrypvofgtn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1994,7 +2005,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#bxwvagjaon .gt_column_spanner_outer {
+#zrypvofgtn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2006,15 +2017,15 @@ class: even_smaller
   padding-right: 4px;
 }
 
-#bxwvagjaon .gt_column_spanner_outer:first-child {
+#zrypvofgtn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bxwvagjaon .gt_column_spanner_outer:last-child {
+#zrypvofgtn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bxwvagjaon .gt_column_spanner {
+#zrypvofgtn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2026,7 +2037,7 @@ class: even_smaller
   width: 100%;
 }
 
-#bxwvagjaon .gt_group_heading {
+#zrypvofgtn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2051,7 +2062,7 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#bxwvagjaon .gt_empty_group_heading {
+#zrypvofgtn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2066,15 +2077,15 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#bxwvagjaon .gt_from_md > :first-child {
+#zrypvofgtn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bxwvagjaon .gt_from_md > :last-child {
+#zrypvofgtn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bxwvagjaon .gt_row {
+#zrypvofgtn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2093,7 +2104,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#bxwvagjaon .gt_stub {
+#zrypvofgtn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2106,7 +2117,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#bxwvagjaon .gt_stub_row_group {
+#zrypvofgtn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2120,11 +2131,11 @@ class: even_smaller
   vertical-align: top;
 }
 
-#bxwvagjaon .gt_row_group_first td {
+#zrypvofgtn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bxwvagjaon .gt_summary_row {
+#zrypvofgtn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2134,16 +2145,16 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#bxwvagjaon .gt_first_summary_row {
+#zrypvofgtn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_first_summary_row.thick {
+#zrypvofgtn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bxwvagjaon .gt_last_summary_row {
+#zrypvofgtn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2153,7 +2164,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_grand_summary_row {
+#zrypvofgtn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2163,7 +2174,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#bxwvagjaon .gt_first_grand_summary_row {
+#zrypvofgtn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2173,11 +2184,11 @@ class: even_smaller
   border-top-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_striped {
+#zrypvofgtn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bxwvagjaon .gt_table_body {
+#zrypvofgtn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2186,7 +2197,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_footnotes {
+#zrypvofgtn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2200,7 +2211,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_footnote {
+#zrypvofgtn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -2209,7 +2220,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#bxwvagjaon .gt_sourcenotes {
+#zrypvofgtn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2223,7 +2234,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#bxwvagjaon .gt_sourcenote {
+#zrypvofgtn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2231,64 +2242,64 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#bxwvagjaon .gt_left {
+#zrypvofgtn .gt_left {
   text-align: left;
 }
 
-#bxwvagjaon .gt_center {
+#zrypvofgtn .gt_center {
   text-align: center;
 }
 
-#bxwvagjaon .gt_right {
+#zrypvofgtn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bxwvagjaon .gt_font_normal {
+#zrypvofgtn .gt_font_normal {
   font-weight: normal;
 }
 
-#bxwvagjaon .gt_font_bold {
+#zrypvofgtn .gt_font_bold {
   font-weight: bold;
 }
 
-#bxwvagjaon .gt_font_italic {
+#zrypvofgtn .gt_font_italic {
   font-style: italic;
 }
 
-#bxwvagjaon .gt_super {
+#zrypvofgtn .gt_super {
   font-size: 65%;
 }
 
-#bxwvagjaon .gt_footnote_marks {
+#zrypvofgtn .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#bxwvagjaon .gt_asterisk {
+#zrypvofgtn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bxwvagjaon .gt_indent_1 {
+#zrypvofgtn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bxwvagjaon .gt_indent_2 {
+#zrypvofgtn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bxwvagjaon .gt_indent_3 {
+#zrypvofgtn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bxwvagjaon .gt_indent_4 {
+#zrypvofgtn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bxwvagjaon .gt_indent_5 {
+#zrypvofgtn .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2332,12 +2343,12 @@ class: even_smaller
 ---
 class: even_smaller
 
-<div id="lrkzknwwpc" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="upkdgxehor" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#lrkzknwwpc .gt_table {
+#upkdgxehor .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2362,7 +2373,7 @@ class: even_smaller
   border-left-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_heading {
+#upkdgxehor .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2374,7 +2385,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_title {
+#upkdgxehor .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2386,7 +2397,7 @@ class: even_smaller
   border-bottom-width: 0;
 }
 
-#lrkzknwwpc .gt_subtitle {
+#upkdgxehor .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2398,13 +2409,13 @@ class: even_smaller
   border-top-width: 0;
 }
 
-#lrkzknwwpc .gt_bottom_border {
+#upkdgxehor .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_col_headings {
+#upkdgxehor .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2419,7 +2430,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_col_heading {
+#upkdgxehor .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2439,7 +2450,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#lrkzknwwpc .gt_column_spanner_outer {
+#upkdgxehor .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2451,15 +2462,15 @@ class: even_smaller
   padding-right: 4px;
 }
 
-#lrkzknwwpc .gt_column_spanner_outer:first-child {
+#upkdgxehor .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lrkzknwwpc .gt_column_spanner_outer:last-child {
+#upkdgxehor .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lrkzknwwpc .gt_column_spanner {
+#upkdgxehor .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2471,7 +2482,7 @@ class: even_smaller
   width: 100%;
 }
 
-#lrkzknwwpc .gt_group_heading {
+#upkdgxehor .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2496,7 +2507,7 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#lrkzknwwpc .gt_empty_group_heading {
+#upkdgxehor .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2511,15 +2522,15 @@ class: even_smaller
   vertical-align: middle;
 }
 
-#lrkzknwwpc .gt_from_md > :first-child {
+#upkdgxehor .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lrkzknwwpc .gt_from_md > :last-child {
+#upkdgxehor .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lrkzknwwpc .gt_row {
+#upkdgxehor .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2538,7 +2549,7 @@ class: even_smaller
   overflow-x: hidden;
 }
 
-#lrkzknwwpc .gt_stub {
+#upkdgxehor .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2551,7 +2562,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lrkzknwwpc .gt_stub_row_group {
+#upkdgxehor .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2565,11 +2576,11 @@ class: even_smaller
   vertical-align: top;
 }
 
-#lrkzknwwpc .gt_row_group_first td {
+#upkdgxehor .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lrkzknwwpc .gt_summary_row {
+#upkdgxehor .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2579,16 +2590,16 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lrkzknwwpc .gt_first_summary_row {
+#upkdgxehor .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_first_summary_row.thick {
+#upkdgxehor .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lrkzknwwpc .gt_last_summary_row {
+#upkdgxehor .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2598,7 +2609,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_grand_summary_row {
+#upkdgxehor .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2608,7 +2619,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lrkzknwwpc .gt_first_grand_summary_row {
+#upkdgxehor .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2618,11 +2629,11 @@ class: even_smaller
   border-top-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_striped {
+#upkdgxehor .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lrkzknwwpc .gt_table_body {
+#upkdgxehor .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2631,7 +2642,7 @@ class: even_smaller
   border-bottom-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_footnotes {
+#upkdgxehor .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2645,7 +2656,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_footnote {
+#upkdgxehor .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -2654,7 +2665,7 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lrkzknwwpc .gt_sourcenotes {
+#upkdgxehor .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2668,7 +2679,7 @@ class: even_smaller
   border-right-color: #D3D3D3;
 }
 
-#lrkzknwwpc .gt_sourcenote {
+#upkdgxehor .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2676,64 +2687,64 @@ class: even_smaller
   padding-right: 5px;
 }
 
-#lrkzknwwpc .gt_left {
+#upkdgxehor .gt_left {
   text-align: left;
 }
 
-#lrkzknwwpc .gt_center {
+#upkdgxehor .gt_center {
   text-align: center;
 }
 
-#lrkzknwwpc .gt_right {
+#upkdgxehor .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lrkzknwwpc .gt_font_normal {
+#upkdgxehor .gt_font_normal {
   font-weight: normal;
 }
 
-#lrkzknwwpc .gt_font_bold {
+#upkdgxehor .gt_font_bold {
   font-weight: bold;
 }
 
-#lrkzknwwpc .gt_font_italic {
+#upkdgxehor .gt_font_italic {
   font-style: italic;
 }
 
-#lrkzknwwpc .gt_super {
+#upkdgxehor .gt_super {
   font-size: 65%;
 }
 
-#lrkzknwwpc .gt_footnote_marks {
+#upkdgxehor .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#lrkzknwwpc .gt_asterisk {
+#upkdgxehor .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lrkzknwwpc .gt_indent_1 {
+#upkdgxehor .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lrkzknwwpc .gt_indent_2 {
+#upkdgxehor .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lrkzknwwpc .gt_indent_3 {
+#upkdgxehor .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lrkzknwwpc .gt_indent_4 {
+#upkdgxehor .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lrkzknwwpc .gt_indent_5 {
+#upkdgxehor .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2786,16 +2797,24 @@ class: even_smaller
 
 .footnote[
 
-*A0*: Early life metropolitan-area segregation &lt;br&gt;
-*ED-level L0:* population, % &gt; 8th grade, % owned a home (overall and/or race-specific measures) &lt;br&gt; 
+*A0*: Racial residencial segregation in 1940's &lt;br&gt;
+*County-level L0:* population, % &gt; 8th grade, % owned a home (overall and/or race-specific measures) &lt;br&gt; 
 *Individual-level L0:* Age at baseline cognitive assessment, sex, childhood SES index &lt;br&gt;
 *Y1, Y2, Yk*: Measurements of memory decline &lt;br&gt;
 *C2, Ck*: Censoring due to loss to follow-up or death]
 
+???
+THis is a directed acyclic graph, although it has been simplified and arrows are colored for better readability, that represent some of the data generating mechanisms.
+First, we have our exposure measured in 1940's, that is our time zero
+Next, we have memory measurements, represented as Y over time
+L0 represents the shared causes of the exposure and the outcome, this includes structural factors that are measured at a county level, and individual factors
+C represent loss to follow-up and death after initiating the follow-up
+
+
 ---
 ## Estimand
 
-`$$E[Y_{1998}^{a = 1, c = 0}] - E[Y_{1998}^{a = 0, c = 0}]$$`
+`$$E[Y_{1998}^{a = 1}] - E[Y_{1998}^{a = 0}]$$`
 --
 
 &lt;br&gt;
@@ -2804,108 +2823,89 @@ class: even_smaller
 .center[....]
 &lt;br&gt;
 
+???
+With that in mind, we can outline our estimand or paratemer of interest.
+Since we are interested in a continuous outcome over time, we first discretized our estimand, by each time point.
+So first, we would be interested in evaluating the mean memory score at baseline had everyone had followed intervention 1) compared to the mean score at baseline had everyone had followed intervention 0)
+
+Next we would look at the mean difference on the memory score, under the two treatment strategies, and on and on we would do this until the last wave of data, and we could plot these point estimates over time, either as by treatment arm or the difference between them.
+
+
 --
 
-`$$E[Y_{2008}^{a = 1, c = 0}] - E[Y_{2008}^{a = 0, c = 0}]$$`
+`$$E[Y_{2018}^{a = 1, c = 0}] - E[Y_{2018}^{a = 0, c = 0}]$$`
 ---
 ## Identifiability assumptions
 
-- Consistency: well-defined intervention
+- Consistency
 
---
+- Exchangeability
 
-- Exchangeability: no unmeasured confounding
+- Positivity
 
---
+- No interference
 
-- Positivity:
-
---
-
-- No interference:
-
-
+???
 
 
 ---
 
-### Identifiability assumptions: Consistency
+## Consistency
 
-- This framework improves the narrative and conversation around these complex exposures.
-
---
-
-  _What does it mean to intervene in 1940 on segregation_
+- Refers to having a well defined intervention.
 
 --
 
-  _Is the dissimilarity index a representative measurement_
+ -  _What does it mean to intervene in 1940 on segregation_
 
 --
 
-  _What is a relevant intervention on the dissimilarity index, reducing under certain threshold or by certain value?_
+ -  _Is the dissimilarity index a representative measurement_
+
+--
+
+  - _What is a relevant intervention on the dissimilarity index, reducing under certain threshold or by certain value?_
 
 ---
-### Identifiability assumptions: Consistency
+## Consistency
+
+
+- In this context, this framework may help us expand the narrative and conversation around these complex exposures.
+
+--
 
 - In this setting, the interventions represent a weighted average of strategies, determined by the frequency of these in the studied population.
 
 --
 
-- The target trial framework helps us in being more transparent about our questions, assumptions and interpretations.
-
---
-
 - It requires deep interdisciplinary dialogue, and only with subject matter expertise can inform how well we feel about satisfying this assumption
 
-
-???
-The consistency assumption is also defined as the well-defined intervention. Although there is a long standing debate on what classifies as "well-defined" or "ill-defined".
-
 ---
-### Identifiability assumptions: Exchangeability
+## Exchangeability
 
-- Considering what variables to adjust for is more challenging.
-
---
-
-- Since there are many factors that can influence residential segregation, whatever we adjust for is not accounted into how we would intervene.
+- If we consider the dissimilarity index a proxy of all the racist policies that have consequences in residential segregation, whatever we adjust for is not accounted into how we would intervene.
 
 --
 
-- There is a moral and ethical value in terms of what variables to adjust. "Allowable" sources of difference are considered fair, and "non-allowable" sources are considered unfair.*
+- There is a moral and ethical value in terms of what variables to adjust.  "Non-allowable" sources are considered unfair and contribute to disparities.(_Jackson J. Epidemiology. 2021_)
 
 --
 
 - Doubly robust methods (TMLE)** can help us obtain valid inferences if either the exposure or the outcome mechanism is consistently estimated.
 
 .footnote[
-* Jackson J. Epidemiology. 2021.
 ** Targeted maximum likelihood estimation. Schuler M. &amp; Rose S. AJE. 2016.
 ]
----
-## Other identifiability assumptions
-
-- Positivity
-
-- No interference
-
-- No model misspecification
 
 ---
 
 ## Take aways
 
+- The target trial framework helps us in being more transparent about our questions, assumptions and interpretations.
 
-- Having a clear question (or estimand) is key to conceptualize the best study design that answers it. 
-  
 --
 
 - We can use the target trial framework even if the intervention of interest is not measured (or exists!). 
-
---
-
-- Specifying the components of the target trial should be one of the first steps prior to the outline of an analysis plan that emulates such trial. 
 
 --
 
@@ -2921,10 +2921,13 @@ The consistency assumption is also defined as the well-defined intervention. Alt
 NIA R01AG074359: Historical social and environmental determinants of memory decline and dementia among U.S. older adults (Dr. Mayeda and Dr. Casey)
 
 ---
+class: middle, right
 
-class: center, middle
+#### _To search for all the refutable consequences of a hypothesis demands highly imaginative thinking. Imagination is needed to arrive at the hypothesis in the first place, let alone to suggest rigorous tests for it. (Carol Buck)_ 
 
-![](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif)
+.footnote[
+_Buck C. Popper's Philosophy for Epidemiologists, IJE. 1975_
+]
 ---
 class: center, middle
 
@@ -2936,6 +2939,12 @@ class: center, middle
 
 <svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> &lt;a href="https://github.com/palolili23"&gt; &lt;/i&gt;&amp;nbsp; @palolili23&lt;/a&gt;&lt;br&gt;
 
+---
+
+
+class: center, middle
+
+![](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif)
 
 ---
 
@@ -2958,6 +2967,8 @@ We use counties as the larger geographic area of interest (_t_) and enumeration 
 ???
 
 A group is evenly distributed when each geographic unit has the same percentage of group members as the total population. The index score can also be interpreted as the percentage of one of the two groups included in the calculation that would have to move to different geographic areas in order to produce a distribution that matches that of the larger area.
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
